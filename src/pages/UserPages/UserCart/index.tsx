@@ -17,7 +17,7 @@ const UserOrders: React.FC = () => {
 
           <tr>
             <td>12asd3a2s1</td>
-            <td>Margherita</td>00
+            <td>Margherita</td>
             <td>
               <button>-</button>1<button>+</button>
             </td>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, GridContainer } from "./styles";
-import ListItem from "../../components/ListItem";
+import ListItem from "../../../components/ListItem";
 
 
 const PizzaMenu: React.FC = () => {
