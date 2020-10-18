@@ -9,8 +9,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FC<ButtonProps> = ({ icon: Icon, children, ...rest }) => (
   <Container>
-    {Icon && <Icon size={20} />}
     <button type="button" {...rest}>
+      {Icon && <Icon size={20} />}
       {children}
     </button>
   </Container>

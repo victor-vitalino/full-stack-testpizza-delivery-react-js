@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-  background: rgba(231, 76, 60, 0.8);
+  background: #2ecc71;
   border-radius: 4px;
-  border: 2px solid rgba(231, 76, 60, 0.8);
+  border: 2px solid #2ecc71;
   width: 100%;
-  height: auto;
+  height: 50px;
   color: #fff;
 
   margin-top: 8px;
   transition: all 0.2s;
 
   :hover {
-    background: rgba(231, 76, 60, 1);
+    background: #27ae60;
   }
 
   button {
@@ -24,5 +26,13 @@ export const Container = styled.div`
     width: 100%;
     border: 0;
     color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+      padding-right:5px;
+    }
   }
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import { FiShoppingCart } from "react-icons/fi";
+import { FiSend } from "react-icons/fi";
 
 import { Container, PizzaName } from "./styles";
 import Button from "../Button";
@@ -13,9 +13,10 @@ const ListItem: React.FC = () => {
       <PizzaName>
         <h2>Margherita</h2>
       </PizzaName>
-      <p>Queijo parmesão, Mussarela, Pimenta, Orégano</p>
-      <Button name="adicionar" icon={FiShoppingCart}>
-        Adicionar
+      <strong>José Carlos</strong>
+      <p>Rua Arlindo Cruz, n°60, joinvile</p>
+      <Button name="adicionar" icon={FiSend}>
+        Pedido Enviado
       </Button>
     </Container>
   );
