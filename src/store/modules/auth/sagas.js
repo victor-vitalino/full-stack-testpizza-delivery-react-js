@@ -1,4 +1,4 @@
-import { call,  put, all, takeLatest } from "redux-saga/effects";
+import { call, put, all, takeLatest } from "redux-saga/effects";
 import { toast } from "react-toastify";
 
 import firebase from "../../../config/FirebaseConfig";
@@ -15,14 +15,15 @@ function* loginUser({ payload }) {
   const response = yield firebase
     .auth()
     .signInWithEmailAndPassword(email, password)
-    .catch((error) => console.tron(error));
+    .catch((error) => {});
 
   if (response.user) {
-    console.tron.log(response);
+   
     const db = firebase.firestore();
     const Data = yield db
       .collection("users")
       .doc(response.user.uid)
+
       .get()
       .then((doc) => {
         if (!doc.exists) {
@@ -41,7 +42,6 @@ function* loginUser({ payload }) {
 }
 function* logout() {
   const response = yield firebase.auth().signOut();
-  console.tron.log(response);
 
   yield put(LogoutSuccess());
   toast.info("Tchau tchau");

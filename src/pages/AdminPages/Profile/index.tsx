@@ -20,11 +20,6 @@ const Profile: React.FC = () => {
     <Container>
       <Form onSubmit={handleFormSubmit}>
         <AvatarInput name="avatar_id" />
-
-        <Input name="name" placeholder="Nome Completo" />
-        <hr />
-
-        <button type="submit">Atualizar perfil</button>
       </Form>
       <button type="button" onClick={handleLogout}>
         Sair

@@ -12,6 +12,7 @@ import { Container, Content } from "./styles";
 
 import firebase from "../../../config/FirebaseConfig";
 import Input from "../../../components/Input";
+import Button from "../../../components/Button";
 
 import {
   updateAmountRequest,
@@ -105,7 +106,7 @@ const UserOrders: React.FC = () => {
           <Input name="address" type="text" placeholder="Endereço de Entrega" />
 
           <h3>Total: {total}</h3>
-          <button type="submit">Finalizar Pedido</button>
+          <Button name="send-order" type="submit">Finalizar Pedido</Button>
         </Form>
       </div>
     </Container>

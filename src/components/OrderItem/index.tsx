@@ -29,7 +29,7 @@ const ListItem: React.FC<IProps> = (props: IProps) => {
   const history = useHistory();
 
   async function handleDelivered() {
-    console.tron.log("enviando");
+    // console.tron.log("enviando");
     const db = firebase.firestore();
     await db
       .collection("orders")

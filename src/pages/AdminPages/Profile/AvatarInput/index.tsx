@@ -48,7 +48,7 @@ const AvatarInput: React.FC<IAvatarInput> = ({ name }) => {
       "state_changed",
       (snapshot) => {},
       function (err) {
-        console.tron.error(err);
+       // console.tron.error(err);
       },
       () => {
         firebase
