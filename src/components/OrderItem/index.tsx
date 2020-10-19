@@ -48,9 +48,11 @@ const ListItem: React.FC<IProps> = (props: IProps) => {
       <PizzaName>
         <h2>{product.id}</h2>
       </PizzaName>
-      {product.orders.map((item: IItem) => (
-        <p key={item.id}>{item.name}</p>
-      ))}
+      <ul>
+        {product.orders.map((item: IItem) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
       <Button name="adicionar" icon={FiSend} onClick={handleDelivered}>
         Pedido Enviado
       </Button>

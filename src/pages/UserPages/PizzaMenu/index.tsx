@@ -45,11 +45,15 @@ const PizzaMenu: React.FC = () => {
         {!pizzas[1] ? (
           <h2>Carregando Cardápio</h2>
         ) : (
-          <GridContainer>
-            {pizzas.map((product) => (
-              <ListItem key={product.id} product={product} />
-            ))}
-          </GridContainer>
+          <>
+            <h2> Cardápio</h2>
+           <br/>
+            <GridContainer>
+              {pizzas.map((product) => (
+                <ListItem key={product.id} product={product} />
+              ))}
+            </GridContainer>
+          </>
         )}
       </Container>
     </>

@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex: 1;
+  flex-direction: column;
 
   margin: 50px;
   background: #ecf0f1;
+  text-align: center;
 `;
 export const GridContainer = styled.div`
   display: grid;

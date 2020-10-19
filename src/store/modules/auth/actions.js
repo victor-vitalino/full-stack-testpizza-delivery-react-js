@@ -34,3 +34,15 @@ export function LogoutSuccess() {
     type: "@auth/LOGOUT_SUCCESS",
   };
 }
+export function updateProfileRequest(data) {
+  return {
+    type: "@auth/UPDATE_PROFILE_REQUEST",
+    payload: data,
+  };
+}
+export function updateProfileSuccess(data) {
+  return {
+    type: "@auth/UPDATE_PROFILE_SUCCESS",
+    payload: data,
+  };
+}
