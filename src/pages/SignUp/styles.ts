@@ -25,7 +25,6 @@ export const Content = styled.div`
     height: 32vh;
     width: 30vw;
   }
-
   a {
     padding-top: 5px;
     color: #333;
@@ -33,9 +32,8 @@ export const Content = styled.div`
     font-weight: bold;
     translate: all 1s;
 
-    &:hover{
-      color:#2ecc71;
-      
+    &:hover {
+      color: #2ecc71;
     }
   }
 `;

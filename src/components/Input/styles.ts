@@ -4,9 +4,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
 
-  background: rgba(231, 76, 60, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  border: 2px solid rgba(231, 76, 60, 0.8);
+  border: 2px solid rgba(0,0,0, 0.4);
   padding: 16px;
   width: 50vw;
 

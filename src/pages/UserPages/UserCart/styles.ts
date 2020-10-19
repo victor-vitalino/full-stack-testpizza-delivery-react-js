@@ -38,6 +38,25 @@ export const Content = styled.div`
     border: 1px solid #eee;
     border-collapse: collapse;
   }
+  td {
+    > div {
+      display: flex;
+      flex-direction: row;
+
+      button {
+        background: transparent;
+        border: 0;
+        margin: 0px 2px;
+        transition: all 0.5s;
+
+        &:hover {
+          svg {
+            color: #2ecc71;
+          }
+        }
+      }
+    }
+  }
 `;
 export const HeadContent = styled.div`
   display: flex;

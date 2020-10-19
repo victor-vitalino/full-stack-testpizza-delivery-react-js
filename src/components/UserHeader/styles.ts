@@ -52,4 +52,15 @@ export const HeaderLinks = styled.div`
       opacity: 0.7;
     }
   }
+  button {
+    background: transparent;
+    border: 0;
+    padding: 0px 5px 0px 5px;
+    &:hover {
+      opacity: 0.7;
+    }
+    svg {
+      color: #fff;
+    }
+  }
 `;

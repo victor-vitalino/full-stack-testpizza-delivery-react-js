@@ -1,10 +1,16 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { LogoutRequest } from "../../../store/modules/auth/actions";
 
 import AvatarInput from "./AvatarInput";
 
 import { Container } from "./styles";
 
 const Profile: React.FC = () => {
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(LogoutRequest());
+  };
   return (
     <Container>
       <form>
@@ -15,7 +21,9 @@ const Profile: React.FC = () => {
 
         <button type="submit">Atualizar perfil</button>
       </form>
-      <button type="button">Sair</button>
+      <button type="button" onClick={handleLogout}>
+        Sair
+      </button>
     </Container>
   );
 };

@@ -45,18 +45,13 @@ const AvatarInput: React.FC<IAvatarInput> = ({ name }) => {
           src={"https://api.adorable.io/avatars/50/abott@adorable.png"}
           alt=""
         />
-        <input
-          type="file"
-          id="avatar"
-          accept="image/*"
-          />
+        <input type="file" id="avatar" accept="image/*" />
       </label>
     </Container>
   );
 };
 
 export default AvatarInput;
-
 // data-file={file}
 // onChange={handleChange}
 // ref={ref}

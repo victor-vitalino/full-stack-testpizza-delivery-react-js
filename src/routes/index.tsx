@@ -1,29 +1,34 @@
 import React from "react";
+import { StateType } from "typesafe-actions";
+import { useSelector } from "react-redux";
 import { Switch, Route, Redirect } from "react-router-dom";
-
-import user from "./user.json";
 
 import UserHeader from "../components/UserHeader";
 import AdminHeader from "../components/AdminHeader";
 
 // import { Container } from './styles';
 import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
 import Dashboard from "../pages/AdminPages/Dashboard";
 import Profile from "../pages/AdminPages/Profile";
 
 import PizzaMenu from "../pages/UserPages/PizzaMenu";
-import UserOrders from "../pages/UserPages/UserOrders";
 import UserCart from "../pages/UserPages/UserCart";
 import NewPizza from "../pages/AdminPages/NewPizza";
 
 const Router = () => {
-  const { signed, admin } = user;
+  const admin = useSelector((state: StateType<any>) => state.auth.admin.admin);
+
+  const signed = useSelector((state: StateType<any>) => state.auth.user.uid)
+    ? true
+    : false;
 
   return (
     <>
       {!signed ? (
         <Switch>
           <Route path="/" exact component={SignIn} />
+          <Route path="/register" exact component={SignUp} />
           <Route path="*" render={() => <Redirect to="/" />} />
         </Switch>
       ) : null}
@@ -33,7 +38,6 @@ const Router = () => {
           <UserHeader />
           <Switch>
             <Route path="/pizza-menu" component={PizzaMenu} />
-            <Route path="/my-orders" component={UserOrders} />
             <Route path="/cart" component={UserCart} />
             <Route path="*" render={() => <Redirect to="/pizza-menu" />} />
           </Switch>
