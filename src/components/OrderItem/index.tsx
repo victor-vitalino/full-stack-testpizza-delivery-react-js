@@ -53,6 +53,7 @@ const ListItem: React.FC<IProps> = (props: IProps) => {
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
+      <h2>{product.address}</h2>
       <Button name="adicionar" icon={FiSend} onClick={handleDelivered}>
         Pedido Enviado
       </Button>
