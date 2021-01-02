@@ -8,7 +8,7 @@ In the test was developed a system for pizza delivery with ReactJs and Firebase.
 
 - ReactJs: for frontend 
 - Styled Components: style frontend
-- polished: manage applications colors
+- Polished: manage applications colors
 - React Toastify: notifications
 - ReduxJs: for application state
 - Redux Saga: for asynchronous processes and data acquisition
