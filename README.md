@@ -1,7 +1,7 @@
 # Test for fullstack developer
 > Test for fullstack developer with ReactJs, Typescript and Firebase
 
-## Description
+### Description
 In the test was developed a system for pizza delivery with ReactJs and Firebase.
 
 ### Used Packages and techs
@@ -18,4 +18,16 @@ In the test was developed a system for pizza delivery with ReactJs and Firebase.
 - Firebase Storage: for save and serve static files 
 - Firebase Hosting: for host the application
 
+### screenshots
+> login screen
+![Demo CountPages alpha](/01.jpg) <br>
 
+> client dashbard  <br>
+![client dashbard](/02.jpg)
+
+> client cart  <br>
+![client car](/03.jpg)
+
+
+> user dashbard  <br>
+![client dashbard](/04.jpg)
